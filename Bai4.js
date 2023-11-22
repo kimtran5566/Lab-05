@@ -8,7 +8,7 @@ const users = [
 ];
 
 // Hàm kiểm tra và hiển thị users có tuổi từ 18 đến 30
-const displayUsersInRange = (userList, minAge, maxAge) => {
+/*const displayUsersInRange = (userList, minAge, maxAge) => {
     const filteredUsers = userList.filter(user => user.age >= minAge && user.age <= maxAge);
 
     if (filteredUsers.length > 0) {
@@ -22,4 +22,8 @@ const displayUsersInRange = (userList, minAge, maxAge) => {
 };
 
 // Gọi hàm để hiển thị users có tuổi từ 18 đến 30
-displayUsersInRange(users, 18, 30);
+displayUsersInRange(users, 18, 30); */
+
+let filteredUsers = users.filter(x => x.age >=18 && x.age <=30);
+
+console.log(filteredUsers);
